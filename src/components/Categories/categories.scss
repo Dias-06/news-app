@@ -1,0 +1,13 @@
+.categories{
+    display: flex;
+    column-gap: 10px;
+    &__btn{
+        padding: 8px 16px;
+        border-radius: 32px;
+        background-color:  #F2F4F5;
+        border: none;
+        &.active{
+            background-color: #E7E7FF;
+        }
+    }
+}

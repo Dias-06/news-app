@@ -1,0 +1,15 @@
+.search{
+    display: flex;
+    align-items: center;
+    padding-block: 24px;
+    &__input{
+        width: 100%;
+        padding: 8px 5px;
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+    &__icon{
+        cursor: pointer;
+    }
+}

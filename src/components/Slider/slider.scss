@@ -1,0 +1,15 @@
+.slider{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    &__content{
+        overflow-x: auto;  
+        overflow-y: hidden;
+        margin-bottom: -20px;   
+        padding-bottom: 20px;   
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        } 
+    }
+}

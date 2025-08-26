@@ -1,0 +1,14 @@
+@use '../../styles/media.scss' as *;
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    padding-top: 24px;
+    @include mobile{
+        display: block;
+    }
+    &__news {
+        min-width: 0; /* важно! позволяет grid ограничить ширину */
+        overflow: hidden; /* чтобы вложенные элементы не выпирали */
+    }
+}

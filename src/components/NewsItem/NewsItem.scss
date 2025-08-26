@@ -1,0 +1,14 @@
+.news-item{
+    display: flex;
+    column-gap: 16px;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+    &__image{
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+    }
+}
