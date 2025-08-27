@@ -69,8 +69,8 @@ const Main = () => {
         <Slider>
           <Categories categories={categories} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         </Slider>
-        <Search/>
-        <NewsList isLoading = {loading} news={news ? news : []}/>
+        <Search fetchNews={fetchNews} keywords={keywords} setKeywords={setKeywords} page={currentPage}/>
+        <NewsList isLoading = {loading} news={news}/>
         <Pagination currentPage = {currentPage} handleNextPage = {handleNextPage} handlePrevPage = {handlePrevPage} handleClickPage = {handleClickPage} totalPages={10}/>
       </div>
 
